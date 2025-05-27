@@ -21,6 +21,13 @@ test('generates a license key with a prefix', function () {
         ->and(substr($key, 4))->toMatch('/^[A-Z]{4}-[0-9]{4}-[A-Z][0-9][A-Z][0-9]-[0-9]{2}[A-Z]{2}$/');
 });
 
+test('generates a license key with a suffix', function () {
+    $generator = new LicenseGenerator();
+    $key = $generator->suffix('-SUF')->generateOne();
+    expect($key)->toEndWith('-SUF')
+        ->and(substr($key, 0, -4))->toMatch('/^[A-Z]{4}-[0-9]{4}-[A-Z][0-9][A-Z][0-9]-[0-9]{2}[A-Z]{2}$/');
+});
+
 test('generates a lower case license key', function () {
     $generator = new LicenseGenerator();
     $key = $generator->lowerCase()->generateOne();

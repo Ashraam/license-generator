@@ -8,6 +8,8 @@ class LicenseGenerator
 
     private string $template = 'XXXX-9999-X9X9-99XX';
 
+    private ?string $suffix = null;
+
     private bool $lowerCase = false;
 
     /**
@@ -17,6 +19,17 @@ class LicenseGenerator
     public function prefix(?string $prefix = null): self
     {
         $this->prefix = $prefix;
+
+        return $this;
+    }
+
+    /**
+     * @param  string|null  $suffix
+     * @return $this
+     */
+    public function suffix(?string $suffix = null): self
+    {
+        $this->suffix = $suffix;
 
         return $this;
     }
@@ -120,6 +133,10 @@ class LicenseGenerator
             } else {
                 $key .= $this->template[$i];
             }
+        }
+
+        if($this->suffix) {
+            $key .= $this->suffix;
         }
 
         return $key;
