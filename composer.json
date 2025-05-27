@@ -1,11 +1,11 @@
 {
-    "name": "ashraam/licensegenerator",
+    "name": "ashraam/license-generator",
     "description": "This package allows you to easily generate license keys with custom templates",
     "keywords": [
         "ashraam",
-        "licensegenerator"
+        "license-generator"
     ],
-    "homepage": "https://github.com/ashraam/licensegenerator",
+    "homepage": "https://github.com/ashraam/license-generator",
     "license": "MIT",
     "type": "library",
     "authors": [
