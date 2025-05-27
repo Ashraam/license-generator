@@ -1,0 +1,42 @@
+{
+    "name": "ashraam/licensegenerator",
+    "description": "This package allows you to easily generate license keys with custom templates",
+    "keywords": [
+        "ashraam",
+        "licensegenerator"
+    ],
+    "homepage": "https://github.com/ashraam/licensegenerator",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Romain BERTOLUCCI",
+            "email": "romain.bertolucci@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ashraam\\LicenseGenerator\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ashraam\\LicenseGenerator\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
