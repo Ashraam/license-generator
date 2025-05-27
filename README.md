@@ -1,4 +1,4 @@
-# Very short description of the package
+# License number generator
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/ashraam/license-generator.svg?style=flat-square)](https://packagist.org/packages/ashraam/license-generator)
 [![Total Downloads](https://img.shields.io/packagist/dt/ashraam/license-generator.svg?style=flat-square)](https://packagist.org/packages/ashraam/license-generator)
